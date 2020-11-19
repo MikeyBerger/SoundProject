@@ -15,6 +15,6 @@ public class LaserScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Speed * Time.deltaTime, 0, 0);
+        transform.Translate(0, Speed * Time.deltaTime, 0);
     }
 }
