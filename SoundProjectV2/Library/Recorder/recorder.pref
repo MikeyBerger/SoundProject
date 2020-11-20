@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: Movie
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 2
+  take: 9
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
@@ -45,10 +45,10 @@ MonoBehaviour:
       m_ForceAssetFolder: 0
       m_AbsolutePath: 
     m_FileName: FoleyProject
-  outputFormat: 0
+  outputFormat: 1
   videoBitRateMode: 2
   captureAlpha: 0
-  containerFormatSelected: 0
+  containerFormatSelected: 1
   encoderSelected: 0
   encoderPresetSelected: 0
   encoderPresetSelectedName: 
@@ -63,7 +63,7 @@ MonoBehaviour:
         m_CustomWidth: 1024
         m_CustomHeight: 1024
         imageHeight: 0
-        maxSupportedHeight: 2160
+        maxSupportedHeight: 4320
         m_AspectRatio:
           m_CustomAspectX: 1
           m_CustomAspectY: 1

@@ -1,0 +1,44 @@
+{
+    "name": "Tutorial",
+    "maps": [
+        {
+            "name": "TutMap",
+            "id": "55989393-85d3-4b48-b8f8-c96bb868260c",
+            "actions": [
+                {
+                    "name": "Button",
+                    "type": "Button",
+                    "id": "55799fc1-12f2-4997-bb91-5c003d2b3f2c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f1c2b5c6-43b5-48b4-b481-acdc9bf8e391",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95d073a7-8b74-422a-b4f8-b8fa289f5a70",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

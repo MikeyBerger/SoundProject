@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ShipScript : MonoBehaviour
 {
@@ -14,6 +16,13 @@ public class ShipScript : MonoBehaviour
     public float Speed;
     public float BulletForce;
     public Transform AudioClip;
+    public Transform ExplosionClip;
+    public Transform AudioPos;
+    public Image Heart1;
+    public Image Heart2;
+    public Image Heart3;
+    private int HeartNum;
+    public string GameOver;
 
     IEnumerator StartShooting()
     {
@@ -24,6 +33,7 @@ public class ShipScript : MonoBehaviour
 
         Rigidbody2D BulletRB = BulletPrefab.GetComponent<Rigidbody2D>();
         BulletRB.AddForce(LaserSpawner.up * BulletForce, ForceMode2D.Impulse);
+        StopAllCoroutines();
     }
 
     // Start is called before the first frame update
@@ -80,11 +90,28 @@ public class ShipScript : MonoBehaviour
         RB.velocity = new Vector2(0, Movement.y) * Speed * Time.deltaTime;
         if (IsShooting)
         {
-            Instantiate(Laser, LaserSpawner.position, LaserSpawner.rotation);
+            StartCoroutine(StartShooting());
+            
+            //Instantiate(Laser, LaserSpawner.position, LaserSpawner.rotation);
             IsShooting = false;
+        }
+
+
+        if(HeartNum == 2)
+        {
+            Heart3.enabled = false;
+        }
+        else if (HeartNum == 1)
+        {
+            Heart2.enabled = false;
+        }
+        else if (HeartNum == 0)
+        {
+            SceneManager.LoadScene(GameOver);
         }
     }
 
+    #region InputActions
     public void OnShoot(InputAction.CallbackContext ctx)
     {
         IsShooting = true;
@@ -110,4 +137,15 @@ public class ShipScript : MonoBehaviour
             //DownButton = true;
         }
     }
+    #endregion
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Danger")
+        {
+            HeartNum--;
+            Instantiate(ExplosionClip, AudioPos.position, AudioPos.rotation);
+        }
+    }
+
 }
