@@ -1,0 +1,128 @@
+{
+    "name": "SoundBoard",
+    "maps": [
+        {
+            "name": "SoundBoardMap",
+            "id": "91ff0fcd-53ec-4edf-b6ce-0c1636831cbe",
+            "actions": [
+                {
+                    "name": "Explosion",
+                    "type": "Button",
+                    "id": "ccc02701-cb23-4f38-83d1-78d30208894d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Laser",
+                    "type": "Button",
+                    "id": "8ee3cd86-74a2-4222-a0c8-2a13b389e9a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "GameOver",
+                    "type": "Button",
+                    "id": "cc495e37-1f0d-4e3c-8b00-c55ae5d06930",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Coin",
+                    "type": "Button",
+                    "id": "97942e48-27c6-41c8-9509-252297ee91de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Wind",
+                    "type": "Button",
+                    "id": "0d8b259c-7eca-4554-8380-c8c233bd8960",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Cancel",
+                    "type": "Button",
+                    "id": "9dd9a02f-b6c0-46f6-a6a0-375346101645",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fb770979-4587-4c91-bf9f-bf23b0f8aa25",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Explosion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f09241b-5cac-4634-b014-4b90213d5842",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Laser",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2661c352-86ac-4555-8eef-c7e868becd10",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Coin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db9d9d26-d7ea-4f4e-b691-13edb36ce20d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Wind",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59a449a3-b0cf-4eb0-8296-5b80ca1c720b",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GameOver",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a7ace5d7-c8bf-4bc3-a8f5-96dafe179baa",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

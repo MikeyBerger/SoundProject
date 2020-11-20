@@ -283,7 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneTimer: 0
   SceneLimit: 3
-  Tutorial: Tutorial
+  Tutorial: SoundRoom
 --- !u!1 &450361994
 GameObject:
   m_ObjectHideFlags: 0

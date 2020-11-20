@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameOver.unity
     guid: 6aa2b4f91b41d4995b654d3edbca1042
+  - enabled: 1
+    path: Assets/SoundRoom.unity
+    guid: fad9b58bab29c473a85198f0422bdf73
   m_configObjects: {}
